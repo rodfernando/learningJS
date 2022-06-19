@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        body { /*Comentário em CSS*/ 
+            background-color: rgb(133, 141, 159);
+            color: white;
+            font: normal 20pt Arial;
+        }
+
+        body > script {
+            color: black;
+            font-weight: bolder;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body> <!--Comentário em HTML-->
+    <h1>Olá Mundo!</h1>
+    <p>Estudando...</p>
+    <script> 
+    var nome = window.prompt('Digite o seu nome: ')
+    var salário = Number(window.prompt('Digite o seu salário: R$'))
+    
+    document.write(`Olá <strong>${nome}</strong>,<br/>`)
+    document.write(`seu nome tem ${nome.length} letras.<br/>`)
+    document.write(`Seu nome em maiúsculo é ${nome.toUpperCase()} e em minúsculo é ${nome.toLowerCase()}.<br/>`) 
+    
+    /*Para números com casas decimais. n1 = 134.3
+    n1.toFixed(2)
+    n1.toFixed(2).replace('.', ',') -> 134,3
+    n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) -> R$ 1,545.50*/ 
+
+    document.write(`O salário de <strong>${nome}</strong> é de <ins>${salário.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}</ins>.`)
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: rgba(22, 19, 181, 0.832);
+            color: white;
+            font: normal 16pt Arial;
+        }
+    </style>
+</head>
+<body> <!--DOM: Document Object Model: Conjunto de objetos dentro do navegador que vai dar acesso interno aos componentes do site. O DOM só é presente quando estamos rodando o javascript dentro do navegador. A árvore DOM começa com o objeto window.-->
+    <h1>Iniciando estudos DOM</h1> 
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar DOM em JavaScript.</p>
+    <div><ins>Clique aqui:</ins></div>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0]    
+        document.write(`Está escrito assim: "${p1.innerText}".`)
+    </script>
+</body>
+</html>
