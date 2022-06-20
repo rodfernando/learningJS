@@ -8,22 +8,23 @@
 </head>
 <body>
     <h1>Nacionalidades</h1>
-    Nacionalidade: <input type="text" name="nac" id="país">
+    Nacionalidade: <input type="text" name="país" id="país">
     <input type="button" value="Verificar" onclick="verificar()">
-    <div id="analise"></div>
-
+    <div id="res">Resultado</div>
+    
     <script>
+        
         function verificar() {
-            var nac = window.document.getElementsById('país').value
-            var ana = window.document.getElementById('analise')
+            var nac = window.document.getElementById('país').value
+            var res = window.document.querySelector('div#res')
             
-            if (nac == 'Brasileiro' || nac == 'brasileiro') {
-                ana.innerHTML = `<p>Você é brasileiro!</p>`
+            res.innerHTML = `<p>Você mora no ${nac}.</p>`
+            if(nac == 'Brasil' || nac == 'brasil') {
+                res.innerHTML += `<p>Você é brasileiro!</p>`
             } else {
-                ana.innerHTML = `<p>Você é ${toLowerCase(nac)}</p>`
+                res.innerHTML += `<p>Você é estrangeiro!</p>`
             }
         }
-
     </script>
 </body>
 </html>

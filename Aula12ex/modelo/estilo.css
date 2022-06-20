@@ -1,0 +1,28 @@
+@charset "uft8";
+
+body {
+    background-color: rgba(27, 44, 233, 0.769);
+    font: normal 15pt Arial;
+
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.364);
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
