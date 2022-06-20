@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Nacionalidades</h1>
+    Nacionalidade: <input type="text" name="nac" id="país">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="analise"></div>
+
+    <script>
+        function verificar() {
+            var nac = window.document.getElementsById('país').value
+            var ana = window.document.getElementById('analise')
+            
+            if (nac == 'Brasileiro' || nac == 'brasileiro') {
+                ana.innerHTML = `<p>Você é brasileiro!</p>`
+            } else {
+                ana.innerHTML = `<p>Você é ${toLowerCase(nac)}</p>`
+            }
+        }
+
+    </script>
+</body>
+</html>
