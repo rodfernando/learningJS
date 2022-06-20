@@ -19,13 +19,17 @@
 </head>
 <!-- Dica: se digitar div#area e apertar tab é criado uma div com id area -->
 <body>
-    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+    <div id="area">
         Interaja...
     </div>
 
     <script>
         var a = window.document.getElementById('area') //ligação do objeto 'a' do JS com o elemento id = area do html
-        
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+        /*addEventListener é igual ao <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">*/
+
         function clicar() {
             a.innerText = 'Clicou!'
             a.style.background = 'red'

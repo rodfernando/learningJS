@@ -13,14 +13,29 @@
         }
     </style>
 </head>
-<body> <!--DOM: Document Object Model: Conjunto de objetos dentro do navegador que vai dar acesso interno aos componentes do site. O DOM só é presente quando estamos rodando o javascript dentro do navegador. A árvore DOM começa com o objeto window.-->
+<body> <!--DOM: Document Object Model: Conjunto de objetos dentro do navegador que vai dar acesso interno aos componentes do site. Facilitador dentro do HTML 5 que dá acesso aos elementos diretamente para o JS. O DOM só é presente quando estamos rodando o javascript dentro do navegador. A árvore DOM começa com o objeto window.-->
     <h1>Iniciando estudos DOM</h1> 
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar DOM em JavaScript.</p>
-    <div><ins>Clique aqui:</ins></div>
-    <script>
+    <div id="msg"><ins>Clique aqui:</ins></div>
+    <script> //Técnicas para acessar elementos dentro do JS usando DOM
+        /*TagName
+        ID
+        Name
+        Classname
+        querySelector*/
+        
         var p1 = window.document.getElementsByTagName('p')[0]    
         document.write(`Está escrito assim: "${p1.innerText}".`)
+        /*var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        d.style.color = 'black'
+        
+        var d = window.document.getElementsByName('msg')[0]
+        d.innerText = 'Olá'*/
+
+        var d = window.document.querySelector('div#msg')// outra forma de selecionar por id
+        d.style.color = 'pink' //# = id; . = class
     </script>
 </body>
 </html>
