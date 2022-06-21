@@ -9,8 +9,8 @@ function carregar() {
 
     //objeto data
     var hora = data.getHours()
-    var minute = data.getMinutes()
-    msg.innerHTML = `Agora são ${hora}:${minute} horas`
+    var minuto = data.getMinutes()
+    msg.innerHTML = `Agora são ${hora}:${minuto} horas`
     //condições 
     if (hora >= 0 && hora < 12) {
         //Dia
