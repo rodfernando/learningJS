@@ -10,7 +10,7 @@ console.log(`O nosso vetor é ${num}.`)
 console.log(num.length)
 console.log(num.sort())
 //função para retornar a chave (key, index)
-num.indexOf(6)
+num.indexOf(6) //retorna -1 caso não encontre
 
 
 console.log('='.repeat(40))
@@ -35,4 +35,16 @@ console.log('='.repeat(40))
 for(let pos in num) {
     console.log(`No index ${pos} temos o número ${num[pos]}.`)
 }
+
+console.log('='.repeat(40))
+
+
+let posição = num.indexOf(10)  
+if (posição == -1){
+    console.log('O valor não se encontra no array.')
+} else {
+    console.log(`O valor 3 está na posição ${posição}`)
+}
+
+
 

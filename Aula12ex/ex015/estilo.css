@@ -1,7 +1,7 @@
 @charset "uft8";
 
 body {
-    background-color: rgba(73, 186, 227, 0.769);
+    background-color: rgba(35, 162, 191, 0.969);
     font: normal 15pt Arial;
 
 }
@@ -11,9 +11,8 @@ header {
     text-align: center;
 }
 
-div {
-    text-align: center;
-    padding: 8px;
+header > h1 {
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.364);
 }
 
 section {
@@ -30,14 +29,8 @@ footer {
     color: white;
     text-align: center;
     font-style: italic;
-    font-size: 10pt;  
 }
 
 footer > p {
-    margin-top: 8px;
-    margin-bottom: 6px;
-}
-
-footer > div {
-    padding-top: 0;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.364);
 }
